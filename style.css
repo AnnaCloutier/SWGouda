@@ -1,0 +1,39 @@
+/* TAGS */
+
+body {
+    display: grid;
+    background-color: #FDFBF2;
+}
+
+header {
+    display: grid;
+    grid-column: 1;
+}
+
+
+/* CLASSES */
+
+.nav-link {
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+}
+
+
+
+
+/* IDs */
+
+#logo-header {
+    max-width: 100px;
+}
+
+
+
+
+/* MEDIA QUERIES */
+
+@media (min-width: 1024px) {
+    #logo-header {
+        max-width: 150px;
+    }
+}
