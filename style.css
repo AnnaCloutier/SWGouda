@@ -11,11 +11,18 @@ header {
 }
 
 
+
+
 /* CLASSES */
 
 .nav-link {
     font-family: 'Amatic SC', cursive;
     font-weight: bold;
+}
+
+
+#gallery {
+    width: 300px;
 }
 
 
@@ -32,8 +39,12 @@ header {
 
 /* MEDIA QUERIES */
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
     #logo-header {
         max-width: 150px;
+    }
+
+    #gallery {
+        width: 50%;
     }
 }
