@@ -1,5 +1,9 @@
 /* TAGS */
 
+html {
+    display: flex;
+}
+
 body {
     display: grid;
     background-color: #FDFBF2;
@@ -7,7 +11,7 @@ body {
 
 header {
     display: grid;
-    grid-column: 1;
+    justify-items: center;
 }
 
 
@@ -15,23 +19,53 @@ header {
 
 /* CLASSES */
 
+.wrapper {
+    display: grid;
+}
+
 .nav-link {
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    font-size: 42px;
+    padding-left: 2%;
+    padding-right: 2%;
+    text-decoration: none;
+    
+}
+
+.gallery {
+    display: grid;
+    grid-column: 3;
+    grid-row: 4;
+}
+
+.gallery-cell {
+    width: 66%;
+    justify-items: center;
+}
+
+.main-title {
+    font-family: 'Amatic SC', cursive;;
+    font-size: 72px;
     font-weight: bold;
+    margin-top: 25px;
 }
-
-
-#gallery {
-    width: 300px;
-}
-
 
 
 
 /* IDs */
 
 #logo-header {
-    max-width: 100px;
+    min-width: 200px;
+    margin-top: 100px;
+}
+
+#nav-bar {
+    grid-row: 2;
+    margin-bottom: 2%;
+    display: grid;
+    justify-items: center;
+
 }
 
 
@@ -39,12 +73,41 @@ header {
 
 /* MEDIA QUERIES */
 
-@media (min-width: 768px) {
+@media ( min-width: 768px ) {
+
     #logo-header {
-        max-width: 150px;
+        max-width: 100px;
     }
 
-    #gallery {
+    .main-title {
+        font-family: 'Amatic SC', cursive;;
+        font-size: 60px;
+        font-weight: bold;
+        margin-top: 25px;
+    }
+
+    .nav-link {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: black;
+        font-size: 25px;
+        padding-left: 2%;
+        padding-right: 2%;
+        text-decoration: none;
+        display: grid;
+        justify-items: center;
+    }
+    
+
+
+    .gallery {
+        display: grid;
+        grid-row: 1;
+        grid-column: auto;
+    }
+    
+    .gallery-cell {
         width: 50%;
     }
+
+
 }
